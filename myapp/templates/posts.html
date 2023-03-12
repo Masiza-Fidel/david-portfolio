@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Kimanzi</title>
+    <!---cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--custom css link-->
+    <link rel="stylesheet" href="{% static 'myapp/style.css'%}">
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo">Kimanzi</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">About</a>
+        <a href="#services">Services</a>
+        <a href="#services">Blog</a>
+        <a href="#products">Reach out</a>
+    </nav>
+   <!-- <div class="icons">
+       <a href="#" class="fas fa-shopping-cart"></a>
+    </div>-->
+</header>
+ 
+    
+        <!--blog Section Starts-->
+        <section class="art" id="blog">
+          <div class="ark">
+            <h2>My Blog</h2>
+          </div>
+            <div class="blog">
+              <h2>{{posts.title}}</h2>
+              <h4>By {{posts.Author}}</h4>
+              <h4>Created on {{posts.created_at}}</h4>
+              <p>{{posts.body}}</p>
+              <a  class="read"  href="{% url 'index' %}">Back</a>
+            </div>             
+       
+        </section>
+        <!--Blog Section ends -->
+        <!--booking section starts-->
+       
+               
+                
+                   
+              
+
+       
+        <!--footer section ends-->
+    <script src="{%static 'myapp/script.js' %}">
+
+    </script>
+</body>
+</html>
